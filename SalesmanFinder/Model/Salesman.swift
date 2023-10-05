@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Salesman {
+struct Salesman: Equatable {
     let name: String
     let areas: [String]
 }
