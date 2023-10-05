@@ -69,6 +69,7 @@
 		28BFA5A02ACEA8D3006BA29A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				28BFA9A82ACEB8DE006BA29A /* App */,
 				28BFA5A12ACEA8DA006BA29A /* Search */,
 			);
 			path = Scenes;
@@ -100,6 +101,14 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		28BFA9A82ACEB8DE006BA29A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				28F8D4842ACEA2CD0049D08A /* SalesmanFinderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		28F8D4782ACEA2CD0049D08A = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +132,6 @@
 			children = (
 				28BFA5A02ACEA8D3006BA29A /* Scenes */,
 				28BFA59C2ACEA79A006BA29A /* Model */,
-				28F8D4842ACEA2CD0049D08A /* SalesmanFinderApp.swift */,
 				28F8D4882ACEA2CF0049D08A /* Assets.xcassets */,
 				28F8D48A2ACEA2CF0049D08A /* Preview Content */,
 			);
