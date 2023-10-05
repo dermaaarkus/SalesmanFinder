@@ -83,6 +83,21 @@ final class SearchViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.salesmen.map(\.name), ["John Appleseed"])
     }
     
+    func test_filteredSalesmen_givenMultipleAreas() async throws {
+        // given
+        let salesmen = [
+            Salesman(name: "John Appleseed", areas: ["12345", "98765"]),
+            Salesman(name: "Jane Appleseed", areas: ["12345"]),
+        ]
+        let viewModel = makeViewModel()
+        
+        // when
+        let filteredSalesmen = viewModel.filteredSalesmen(salesmen, operatingInArea: "98765")
+        
+        // then
+        XCTAssertEqual(filteredSalesmen.map(\.name), ["John Appleseed"])
+    }
+    
     // MARK: - Helpers
 
     private func makeViewModel(salesmen: [Salesman]? = nil) -> SearchViewModel {
