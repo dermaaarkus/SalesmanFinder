@@ -11,6 +11,6 @@ enum StyleGuide {
     static let secondaryTextColor = Color("SecondaryTextColor")
     static let companyColor = Color("CompanyColor")
     static let fillColor = Color("FillColor")
-    static let separatorColor = Color("SeparatorColor")
+    static let strokeColor = Color("StrokeColor")
     static let textColor = Color("TextColor")
 }

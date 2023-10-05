@@ -32,6 +32,7 @@ struct SearchSalesmanView: View {
             .padding(.trailing)
             
             Divider()
+                .tint(StyleGuide.strokeColor)
         }
         .padding(.leading)
     }
@@ -39,7 +40,7 @@ struct SearchSalesmanView: View {
     private var circle: some View {
         ZStack {
             Circle()
-                .stroke(StyleGuide.separatorColor, lineWidth: 1)
+                .stroke(StyleGuide.strokeColor, lineWidth: 2)
                 .fill(StyleGuide.fillColor)
                 .frame(width: 42, height: 42)
             
