@@ -36,9 +36,13 @@ final class SearchViewModel: ObservableObject {
             return nil
         }
         
+        let name = dataModel.name
+        let details = dataModel.areas.joined(separator: ", ")
+        
         return .init(
             firstCharacter: firstCharacter,
-            name: dataModel.name
+            name: name,
+            details: details
         )
     }
 }

@@ -15,5 +15,6 @@ enum SearchDisplayModel {
         
         let firstCharacter: Character
         let name: String
+        let details: String
     }
 }
