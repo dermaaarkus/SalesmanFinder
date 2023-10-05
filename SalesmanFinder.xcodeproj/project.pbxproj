@@ -18,6 +18,7 @@
 		28BFA9B32ACEC29C006BA29A /* SearchSalesmanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFA9B22ACEC29C006BA29A /* SearchSalesmanView.swift */; };
 		28BFA9B62ACECD20006BA29A /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFA9B52ACECD20006BA29A /* StyleGuide.swift */; };
 		28BFA9B92ACED99E006BA29A /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFA9B82ACED99E006BA29A /* SearchViewModelTests.swift */; };
+		28EB78362ACEFA6E00F4846B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28EB78352ACEFA6E00F4846B /* README.md */; };
 		28F8D4852ACEA2CD0049D08A /* SalesmanFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F8D4842ACEA2CD0049D08A /* SalesmanFinderApp.swift */; };
 		28F8D4892ACEA2CF0049D08A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F8D4882ACEA2CF0049D08A /* Assets.xcassets */; };
 		28F8D48C2ACEA2CF0049D08A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F8D48B2ACEA2CF0049D08A /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		28BFA9B22ACEC29C006BA29A /* SearchSalesmanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSalesmanView.swift; sourceTree = "<group>"; };
 		28BFA9B52ACECD20006BA29A /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		28BFA9B82ACED99E006BA29A /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		28EB78352ACEFA6E00F4846B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		28F8D4812ACEA2CD0049D08A /* SalesmanFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesmanFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F8D4842ACEA2CD0049D08A /* SalesmanFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesmanFinderApp.swift; sourceTree = "<group>"; };
 		28F8D4882ACEA2CF0049D08A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		28F8D4782ACEA2CD0049D08A = {
 			isa = PBXGroup;
 			children = (
+				28EB78352ACEFA6E00F4846B /* README.md */,
 				28F8D4832ACEA2CD0049D08A /* SalesmanFinder */,
 				28F8D4942ACEA2CF0049D08A /* SalesmanFinderTests */,
 				28F8D4822ACEA2CD0049D08A /* Products */,
@@ -272,6 +275,7 @@
 			files = (
 				28F8D48C2ACEA2CF0049D08A /* Preview Assets.xcassets in Resources */,
 				28F8D4892ACEA2CF0049D08A /* Assets.xcassets in Resources */,
+				28EB78362ACEFA6E00F4846B /* README.md in Resources */,
 				28BFA9AC2ACEBC01006BA29A /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
