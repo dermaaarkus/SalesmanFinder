@@ -12,7 +12,33 @@ struct SearchSalesmanView: View {
     let salesman: SearchDisplayModel.Salesman
     
     var body: some View {
-        Text("Row \(salesman.name)")
+        
+        HStack {
+            ZStack {
+                Circle()
+                    .stroke(StyleGuide.seperatorColor, lineWidth: 1)
+                    .fill(StyleGuide.fillColor)
+                    .frame(width: 42, height: 42)
+                
+                Text("A")
+                    .foregroundStyle(StyleGuide.textColor)
+            }
+            .padding(.vertical, 10)
+            
+            DisclosureGroup(
+                content: {
+                    Text("PLZ")
+                        .foregroundStyle(StyleGuide.secondaryTextColor)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                },
+                label: {
+                    Text(salesman.name)
+                        .foregroundStyle(StyleGuide.textColor)
+                }
+            )
+            .tint(StyleGuide.secondaryTextColor)
+        }
+        .padding()
     }
 }
 
