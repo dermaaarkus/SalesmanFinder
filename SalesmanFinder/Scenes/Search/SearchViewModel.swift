@@ -9,4 +9,9 @@ import Foundation
 
 final class SearchViewModel: ObservableObject {
     
+    private let repository: any SearchRepositoryProtocol
+    
+    init(repository: any SearchRepositoryProtocol) {
+        self.repository = repository
+    }
 }

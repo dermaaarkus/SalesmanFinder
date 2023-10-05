@@ -10,9 +10,14 @@ import SwiftUI
 @main
 struct SalesmanFinderApp: App {
     
+    let appDependency = AppDependency()
+    
     var body: some Scene {
         WindowGroup {
-            SearchView(viewModel: SearchViewModel())
+            let repository = appDependency.searchRepository
+            let viewModel = SearchViewModel(repository: repository)
+            
+            SearchView(viewModel: viewModel)
         }
     }
 }

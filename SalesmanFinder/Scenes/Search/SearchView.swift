@@ -17,7 +17,8 @@ struct SearchView: View {
 }
 
 #Preview {
-    let viewModel = SearchViewModel()
+    let repository = SearchRepositoryMock()
+    let viewModel = SearchViewModel(repository: repository)
     
     return SearchView(viewModel: viewModel)
 }
