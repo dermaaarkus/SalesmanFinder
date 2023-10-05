@@ -12,19 +12,10 @@
 		28F8D4892ACEA2CF0049D08A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F8D4882ACEA2CF0049D08A /* Assets.xcassets */; };
 		28F8D48C2ACEA2CF0049D08A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F8D48B2ACEA2CF0049D08A /* Preview Assets.xcassets */; };
 		28F8D4962ACEA2CF0049D08A /* SalesmanFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F8D4952ACEA2CF0049D08A /* SalesmanFinderTests.swift */; };
-		28F8D4A02ACEA2CF0049D08A /* SalesmanFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F8D49F2ACEA2CF0049D08A /* SalesmanFinderUITests.swift */; };
-		28F8D4A22ACEA2CF0049D08A /* SalesmanFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F8D4A12ACEA2CF0049D08A /* SalesmanFinderUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		28F8D4922ACEA2CF0049D08A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28F8D4792ACEA2CD0049D08A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28F8D4802ACEA2CD0049D08A;
-			remoteInfo = SalesmanFinder;
-		};
-		28F8D49C2ACEA2CF0049D08A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 28F8D4792ACEA2CD0049D08A /* Project object */;
 			proxyType = 1;
@@ -41,9 +32,6 @@
 		28F8D48B2ACEA2CF0049D08A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28F8D4912ACEA2CF0049D08A /* SalesmanFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesmanFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F8D4952ACEA2CF0049D08A /* SalesmanFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesmanFinderTests.swift; sourceTree = "<group>"; };
-		28F8D49B2ACEA2CF0049D08A /* SalesmanFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesmanFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28F8D49F2ACEA2CF0049D08A /* SalesmanFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesmanFinderUITests.swift; sourceTree = "<group>"; };
-		28F8D4A12ACEA2CF0049D08A /* SalesmanFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesmanFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28F8D4982ACEA2CF0049D08A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +57,6 @@
 			children = (
 				28F8D4832ACEA2CD0049D08A /* SalesmanFinder */,
 				28F8D4942ACEA2CF0049D08A /* SalesmanFinderTests */,
-				28F8D49E2ACEA2CF0049D08A /* SalesmanFinderUITests */,
 				28F8D4822ACEA2CD0049D08A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +66,6 @@
 			children = (
 				28F8D4812ACEA2CD0049D08A /* SalesmanFinder.app */,
 				28F8D4912ACEA2CF0049D08A /* SalesmanFinderTests.xctest */,
-				28F8D49B2ACEA2CF0049D08A /* SalesmanFinderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +95,6 @@
 				28F8D4952ACEA2CF0049D08A /* SalesmanFinderTests.swift */,
 			);
 			path = SalesmanFinderTests;
-			sourceTree = "<group>";
-		};
-		28F8D49E2ACEA2CF0049D08A /* SalesmanFinderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				28F8D49F2ACEA2CF0049D08A /* SalesmanFinderUITests.swift */,
-				28F8D4A12ACEA2CF0049D08A /* SalesmanFinderUITestsLaunchTests.swift */,
-			);
-			path = SalesmanFinderUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = 28F8D4912ACEA2CF0049D08A /* SalesmanFinderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		28F8D49A2ACEA2CF0049D08A /* SalesmanFinderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28F8D4AB2ACEA2CF0049D08A /* Build configuration list for PBXNativeTarget "SalesmanFinderUITests" */;
-			buildPhases = (
-				28F8D4972ACEA2CF0049D08A /* Sources */,
-				28F8D4982ACEA2CF0049D08A /* Frameworks */,
-				28F8D4992ACEA2CF0049D08A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				28F8D49D2ACEA2CF0049D08A /* PBXTargetDependency */,
-			);
-			name = SalesmanFinderUITests;
-			productName = SalesmanFinderUITests;
-			productReference = 28F8D49B2ACEA2CF0049D08A /* SalesmanFinderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					28F8D4902ACEA2CF0049D08A = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 28F8D4802ACEA2CD0049D08A;
-					};
-					28F8D49A2ACEA2CF0049D08A = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 28F8D4802ACEA2CD0049D08A;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				28F8D4802ACEA2CD0049D08A /* SalesmanFinder */,
 				28F8D4902ACEA2CF0049D08A /* SalesmanFinderTests */,
-				28F8D49A2ACEA2CF0049D08A /* SalesmanFinderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,13 +184,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		28F8D48F2ACEA2CF0049D08A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28F8D4992ACEA2CF0049D08A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,15 +210,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28F8D4972ACEA2CF0049D08A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28F8D4A22ACEA2CF0049D08A /* SalesmanFinderUITestsLaunchTests.swift in Sources */,
-				28F8D4A02ACEA2CF0049D08A /* SalesmanFinderUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +217,6 @@
 			isa = PBXTargetDependency;
 			target = 28F8D4802ACEA2CD0049D08A /* SalesmanFinder */;
 			targetProxy = 28F8D4922ACEA2CF0049D08A /* PBXContainerItemProxy */;
-		};
-		28F8D49D2ACEA2CF0049D08A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28F8D4802ACEA2CD0049D08A /* SalesmanFinder */;
-			targetProxy = 28F8D49C2ACEA2CF0049D08A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -490,9 +416,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.fassbender.SalesmanFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalesmanFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalesmanFinder";
 			};
 			name = Debug;
@@ -509,44 +438,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.fassbender.SalesmanFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalesmanFinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalesmanFinder";
-			};
-			name = Release;
-		};
-		28F8D4AC2ACEA2CF0049D08A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.fassbender.SalesmanFinderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SalesmanFinder;
-			};
-			name = Debug;
-		};
-		28F8D4AD2ACEA2CF0049D08A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.fassbender.SalesmanFinderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SalesmanFinder;
 			};
 			name = Release;
 		};
@@ -576,15 +474,6 @@
 			buildConfigurations = (
 				28F8D4A92ACEA2CF0049D08A /* Debug */,
 				28F8D4AA2ACEA2CF0049D08A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		28F8D4AB2ACEA2CF0049D08A /* Build configuration list for PBXNativeTarget "SalesmanFinderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28F8D4AC2ACEA2CF0049D08A /* Debug */,
-				28F8D4AD2ACEA2CF0049D08A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
