@@ -13,6 +13,7 @@
 		28BFA9A52ACEAE19006BA29A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFA9A42ACEAE19006BA29A /* SearchView.swift */; };
 		28BFA9A72ACEB498006BA29A /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFA9A62ACEB498006BA29A /* SearchViewModel.swift */; };
 		28BFA9AA2ACEB901006BA29A /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFA9A92ACEB901006BA29A /* AppDependency.swift */; };
+		28BFA9AC2ACEBC01006BA29A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 28BFA9AB2ACEBC01006BA29A /* Localizable.xcstrings */; };
 		28F8D4852ACEA2CD0049D08A /* SalesmanFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F8D4842ACEA2CD0049D08A /* SalesmanFinderApp.swift */; };
 		28F8D4892ACEA2CF0049D08A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F8D4882ACEA2CF0049D08A /* Assets.xcassets */; };
 		28F8D48C2ACEA2CF0049D08A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F8D48B2ACEA2CF0049D08A /* Preview Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		28BFA9A42ACEAE19006BA29A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		28BFA9A62ACEB498006BA29A /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		28BFA9A92ACEB901006BA29A /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		28BFA9AB2ACEBC01006BA29A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		28F8D4812ACEA2CD0049D08A /* SalesmanFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesmanFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F8D4842ACEA2CD0049D08A /* SalesmanFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesmanFinderApp.swift; sourceTree = "<group>"; };
 		28F8D4882ACEA2CF0049D08A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				28BFA5A02ACEA8D3006BA29A /* Scenes */,
 				28BFA59C2ACEA79A006BA29A /* Model */,
 				28F8D4882ACEA2CF0049D08A /* Assets.xcassets */,
+				28BFA9AB2ACEBC01006BA29A /* Localizable.xcstrings */,
 				28F8D48A2ACEA2CF0049D08A /* Preview Content */,
 			);
 			path = SalesmanFinder;
@@ -221,6 +224,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 28F8D4782ACEA2CD0049D08A;
 			productRefGroup = 28F8D4822ACEA2CD0049D08A /* Products */;
@@ -240,6 +244,7 @@
 			files = (
 				28F8D48C2ACEA2CF0049D08A /* Preview Assets.xcassets in Resources */,
 				28F8D4892ACEA2CF0049D08A /* Assets.xcassets in Resources */,
+				28BFA9AC2ACEBC01006BA29A /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
