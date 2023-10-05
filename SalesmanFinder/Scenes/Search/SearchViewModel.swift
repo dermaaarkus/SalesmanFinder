@@ -10,7 +10,7 @@ import Foundation
 final class SearchViewModel: ObservableObject {
     
     @Published var searchText: String = ""
-    @Published var salesmenItems: [SearchDisplayModel.Salesman] = []
+    @Published var salesmen: [SearchDisplayModel.Salesman] = []
     
     private let repository: any SearchRepositoryProtocol
     
@@ -21,7 +21,7 @@ final class SearchViewModel: ObservableObject {
     @MainActor
     func load() async {
         do {
-            salesmenItems = try await repository.getSalesmanList().map(makeSalesmanDisplayModel)
+            salesmen = try await repository.getSalesmanList().map(makeSalesmanDisplayModel)
         } catch {
             // TODO: implement error view and show
             assertionFailure("failure handling is not implemented!")

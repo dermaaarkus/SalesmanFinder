@@ -15,8 +15,8 @@ struct SearchView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(viewModel.salesmenItems) { item in
-                        Text("Row \(item.name)")
+                    ForEach(viewModel.salesmen) { salesman in
+                        SearchSalesmanView(salesman: salesman)
                     }
                 }
             }
