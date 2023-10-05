@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct SalesmanFinderApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            SearchView()
+            SearchView(viewModel: SearchViewModel())
         }
     }
 }
