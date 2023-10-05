@@ -9,6 +9,8 @@ import Foundation
 
 final class SearchViewModel: ObservableObject {
     
+    @Published var searchText: String = ""
+    
     private let repository: any SearchRepositoryProtocol
     
     init(repository: any SearchRepositoryProtocol) {

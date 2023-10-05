@@ -12,7 +12,11 @@ struct SearchView: View {
     @ObservedObject var viewModel: SearchViewModel
     
     var body: some View {
-        Text("Search View")
+        NavigationStack {
+            Text("")
+                .navigationTitle("Addresses")
+        }
+        .searchable(text: $viewModel.searchText, prompt: "Search")
     }
 }
 
