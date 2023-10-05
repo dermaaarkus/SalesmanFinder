@@ -13,6 +13,7 @@ enum SearchDisplayModel {
         //          this requirement must be clarified with product management.
         var id: String { name }
         
+        let firstCharacter: Character
         let name: String
     }
 }

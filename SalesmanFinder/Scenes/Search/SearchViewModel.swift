@@ -21,14 +21,24 @@ final class SearchViewModel: ObservableObject {
     @MainActor
     func load() async {
         do {
-            salesmen = try await repository.getSalesmanList().map(makeSalesmanDisplayModel)
+            salesmen = try await repository
+                .getSalesmanList()
+                .compactMap(makeSalesmanDisplayModel)
         } catch {
             // TODO: implement error view and show
             assertionFailure("failure handling is not implemented!")
         }
     }
     
-    private func makeSalesmanDisplayModel(_ dataModel: Salesman) -> SearchDisplayModel.Salesman {
-        .init(name: dataModel.name)
+    private func makeSalesmanDisplayModel(_ dataModel: Salesman) -> SearchDisplayModel.Salesman? {
+        guard let firstCharacter = dataModel.name.first else {
+            assertionFailure("expect 'name' to be not empty and have a first character!")
+            return nil
+        }
+        
+        return .init(
+            firstCharacter: firstCharacter,
+            name: dataModel.name
+        )
     }
 }

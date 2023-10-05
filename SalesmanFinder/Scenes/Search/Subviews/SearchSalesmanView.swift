@@ -44,7 +44,7 @@ struct SearchSalesmanView: View {
                 .fill(StyleGuide.fillColor)
                 .frame(width: 42, height: 42)
             
-            Text("A")
+            Text(String(salesman.firstCharacter))
                 .foregroundStyle(StyleGuide.textColor)
         }
     }
@@ -64,5 +64,8 @@ struct SearchSalesmanView: View {
 // MARK: - Preview
 
 #Preview(traits: .sizeThatFitsLayout) {
-    SearchSalesmanView(salesman: .init(name: "John Appleseed"))
+    SearchSalesmanView(salesman: .init(
+        firstCharacter: "J",
+        name: "John Appleseed"
+    ))
 }
