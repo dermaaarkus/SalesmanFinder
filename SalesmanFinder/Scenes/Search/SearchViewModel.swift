@@ -69,17 +69,17 @@ final class SearchViewModel: ObservableObject {
     // MARK: Search
     
     private func search(for text: String) {
-        let filteredSalesmen = filterSalesmen(allSalesmen, operatingInArea: text)
+        let filteredSalesmen = filteredSalesmen(allSalesmen, operatingInArea: text)
         salesmen = filteredSalesmen.compactMap(makeSalesmanDisplayModel)
     }
     
-    func filterSalesmen(_ salesmen: [Salesman], operatingInArea text: String) -> [Salesman] {
+    func filteredSalesmen(_ salesmen: [Salesman], operatingInArea text: String) -> [Salesman] {
         if text.isEmpty {
             // show all salesmen
-            return allSalesmen
+            return salesmen
         }
         
-        return allSalesmen.filter { salesman in
+        return salesmen.filter { salesman in
             isSalesman(salesman, operatingInArea: text)
         }
     }
