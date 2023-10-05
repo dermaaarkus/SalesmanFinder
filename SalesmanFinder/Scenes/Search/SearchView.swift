@@ -23,6 +23,7 @@ struct SearchView: View {
             .navigationTitle("Addresses")
         }
         .searchable(text: $viewModel.searchText, prompt: "Search")
+        .keyboardType(.numberPad)
         .task {
             await viewModel.load()
         }
