@@ -13,10 +13,19 @@ struct SearchView: View {
     
     var body: some View {
         NavigationStack {
-            Text("")
-                .navigationTitle("Addresses")
+            ScrollView {
+                LazyVStack {
+                    ForEach(viewModel.salesmenItems) { item in
+                        Text("Row \(item.name)")
+                    }
+                }
+            }
+            .navigationTitle("Addresses")
         }
         .searchable(text: $viewModel.searchText, prompt: "Search")
+        .task {
+            await viewModel.load()
+        }
     }
 }
 
