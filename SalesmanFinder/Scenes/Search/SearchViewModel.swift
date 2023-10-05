@@ -85,6 +85,8 @@ final class SearchViewModel: ObservableObject {
     }
     
     private func isSalesman(_ salesman: Salesman, operatingInArea text: String) -> Bool {
+        // NOTE: probably this whole matching works better with Regex, but I didn't manage to solve it in time.
+        
         let numbersOnlyAreas = salesman.areas.map {
             var area = $0
             area.removeAll { $0 == "*" }
@@ -93,8 +95,10 @@ final class SearchViewModel: ObservableObject {
         
         return numbersOnlyAreas.contains { area in
             if text.count <= area.count {
+                // Text "1234" / Area "12345"
                 return area.starts(with: text)
             } else {
+                // Text "12345" / Area "1234"
                 return text.starts(with: area)
             }
         }
