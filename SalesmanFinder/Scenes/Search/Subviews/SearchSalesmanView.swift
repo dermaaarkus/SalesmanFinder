@@ -16,7 +16,7 @@ struct SearchSalesmanView: View {
         HStack {
             ZStack {
                 Circle()
-                    .stroke(StyleGuide.seperatorColor, lineWidth: 1)
+                    .stroke(StyleGuide.separatorColor, lineWidth: 1)
                     .fill(StyleGuide.fillColor)
                     .frame(width: 42, height: 42)
                 

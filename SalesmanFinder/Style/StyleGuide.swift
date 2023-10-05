@@ -10,6 +10,6 @@ import SwiftUI
 enum StyleGuide {
     static let secondaryTextColor = Color("SecondaryTextColor")
     static let fillColor = Color("FillColor")
-    static let seperatorColor = Color("SeperatorColor")
+    static let separatorColor = Color("SeparatorColor")
     static let textColor = Color("TextColor")
 }
