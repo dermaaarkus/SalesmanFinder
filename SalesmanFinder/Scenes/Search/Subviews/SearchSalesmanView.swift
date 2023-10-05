@@ -13,32 +13,50 @@ struct SearchSalesmanView: View {
     
     var body: some View {
         
-        HStack {
-            ZStack {
-                Circle()
-                    .stroke(StyleGuide.separatorColor, lineWidth: 1)
-                    .fill(StyleGuide.fillColor)
-                    .frame(width: 42, height: 42)
+        VStack {
+            HStack {
+                circle
+                    .padding(.vertical, 17)
                 
-                Text("A")
-                    .foregroundStyle(StyleGuide.textColor)
+                DisclosureGroup(
+                    content: {
+                        details
+                    },
+                    label: {
+                        name
+                    }
+                )
+                // TODO: fix that the disclosure arrow seems not to adapt correctly to this color.
+                .tint(StyleGuide.secondaryTextColor)
             }
-            .padding(.vertical, 10)
+            .padding(.trailing)
             
-            DisclosureGroup(
-                content: {
-                    Text("PLZ")
-                        .foregroundStyle(StyleGuide.secondaryTextColor)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                },
-                label: {
-                    Text(salesman.name)
-                        .foregroundStyle(StyleGuide.textColor)
-                }
-            )
-            .tint(StyleGuide.secondaryTextColor)
+            Divider()
         }
-        .padding()
+        .padding(.leading)
+    }
+    
+    private var circle: some View {
+        ZStack {
+            Circle()
+                .stroke(StyleGuide.separatorColor, lineWidth: 1)
+                .fill(StyleGuide.fillColor)
+                .frame(width: 42, height: 42)
+            
+            Text("A")
+                .foregroundStyle(StyleGuide.textColor)
+        }
+    }
+    
+    private var name: some View {
+        Text(salesman.name)
+            .foregroundStyle(StyleGuide.textColor)
+    }
+    
+    private var details: some View {
+        Text("PLZ")
+            .foregroundStyle(StyleGuide.secondaryTextColor)
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
