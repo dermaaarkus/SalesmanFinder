@@ -16,6 +16,8 @@ struct SearchSalesmanView: View {
     }
 }
 
-#Preview {
+// MARK: - Preview
+
+#Preview(traits: .sizeThatFitsLayout) {
     SearchSalesmanView(salesman: .init(name: "John Appleseed"))
 }

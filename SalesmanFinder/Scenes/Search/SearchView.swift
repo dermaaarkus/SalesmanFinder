@@ -29,8 +29,12 @@ struct SearchView: View {
     }
 }
 
+// MARK: - Preview
+
 #Preview {
-    let repository = SearchRepositoryMock()
+    let repository = SearchRepositoryMock(salesmen: [
+        .init(name: "John Appleseed", areas: ["12345"])
+    ])
     let viewModel = SearchViewModel(repository: repository)
     
     return SearchView(viewModel: viewModel)

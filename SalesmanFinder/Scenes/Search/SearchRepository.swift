@@ -28,8 +28,18 @@ public enum SearchRepositoryMockError: Error {
 }
 
 struct SearchRepositoryMock: SearchRepositoryProtocol {
+    
+    private let salesmen: [Salesman]?
+    
+    init(salesmen: [Salesman]? = nil) {
+        self.salesmen = salesmen
+    }
+    
     func getSalesmanList() async throws -> [Salesman] {
-        throw SearchRepositoryMockError.notImplemented
+        guard let salesmen else {
+            throw SearchRepositoryMockError.notImplemented
+        }
+        return salesmen
     }
 }
 #endif
